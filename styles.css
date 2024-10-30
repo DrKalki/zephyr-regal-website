@@ -12,6 +12,10 @@
     --accent-color: #ff7f50; /* Orange */
     --blockquote-bg: #f0f0f0;
     --footer-color: #777;
+    --button-bg: #ff7f50;
+    --button-text: #fff;
+    --button-hover-bg: #e67347;
+    --back-button-color: #ff7f50;
 }
 
 /* Body Styling */
@@ -26,14 +30,60 @@ body {
 
 /* Header Styling */
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between items */
     text-align: center;
     padding: 20px 0;
     border-bottom: 2px solid var(--accent-color);
+    position: relative;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    color: var(--accent-color);
+/* Back Button Styling */
+.back-button {
+    text-decoration: none;
+    color: var(--back-button-color);
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.back-button:hover {
+    color: var(--button-hover-bg);
+}
+
+/* Spacer Styling */
+.spacer {
+    width: 100px; /* Adjust based on back-button width to balance */
+}
+
+/* Landing Page Styling */
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.option-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.option-button:hover {
+    background-color: var(--button-hover-bg);
 }
 
 /* Main Content Styling */
@@ -105,11 +155,25 @@ footer {
         font-size: 2rem;
     }
 
-    main {
-        padding: 5px;
+    .options-container {
+        gap: 15px;
+    }
+
+    .option-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
     }
 
     footer {
         padding: 15px 0;
+    }
+
+    /* Adjust spacer width for smaller screens if needed */
+    .spacer {
+        width: 60px;
     }
 }

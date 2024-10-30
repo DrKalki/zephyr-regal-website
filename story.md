@@ -4,7 +4,7 @@
 
 ## We welcome you as delegates of... 
 
-                                            T H E  Z E P H Y R   R E G A L
+          T H E  Z E P H Y R   R E G A L
                                     
 ## tis but a race! a race against time, through space (and the deepest of waters)
 
