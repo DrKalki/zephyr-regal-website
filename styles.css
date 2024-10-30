@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables for Light Theme */
+:root {
+    --background-color: #f8f8f2; /* Off-white */
+    --text-color: #333;
+    --accent-color: #ff7f50; /* Orange */
+    --blockquote-bg: #f0f0f0;
+    --footer-color: #777;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+/* Main Content Styling */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    overflow-wrap: break-word; /* Ensures long words wrap */
+    word-wrap: break-word; /* For legacy browsers */
+    hyphens: auto; /* Adds hyphens where appropriate */
+}
+
+main h1, main h2, main h3 {
+    color: var(--accent-color);
+}
+
+main p {
+    margin-bottom: 1em;
+    word-break: break-word; /* Breaks long words if necessary */
+}
+
+main blockquote {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1em;
+    color: var(--text-color);
+    margin: 1em 0;
+    background-color: var(--blockquote-bg);
+    border-radius: 4px;
+}
+
+main code {
+    background-color: #eaeaea;
+    padding: 2px 4px;
+    border-radius: 4px;
+    white-space: pre-wrap; /* Allows code to wrap */
+    word-break: break-word; /* Breaks long code lines */
+}
+
+main pre {
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto; /* Adds scrollbar if content overflows */
+    white-space: pre-wrap; /* Allows preformatted text to wrap */
+    word-break: break-word; /* Breaks long lines */
+}
+
+/* Responsive Images */
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid var(--accent-color);
+    margin-top: 40px;
+    color: var(--footer-color);
+    transition: color 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
